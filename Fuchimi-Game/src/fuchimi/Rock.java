@@ -2,14 +2,15 @@ package fuchimi;
 
 public class Rock extends Hand{
 	
-	public Rock(){
-		
+
+	@Override
+	public String toString() {
+		return "Rock";
 	}
 
 	@Override
 	public boolean beats(Hand hand) {
-		// TODO Auto-generated method stub
-		return false;
+		return hand.looseAgainst(this);
 	}
 
 	@Override

@@ -2,14 +2,17 @@ package fuchimi;
 
 public class Scissors extends Hand{
 
-	public Scissors(){
-		
+	
+
+	@Override
+	public String toString() {
+		return "Scissors";
 	}
 
 	@Override
 	public boolean beats(Hand hand) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return hand.looseAgainst(this);
 	}
 
 	@Override

@@ -2,15 +2,15 @@ package fuchimi;
 
 public class Paper extends Hand{
 
-	public Paper() {
-		// TODO Auto-generated constructor stub
+
+	@Override
+	public String toString() {
+		return "Paper";
 	}
 
 	@Override
 	public boolean beats(Hand hand) {
-		
-			return false;
-
+		return hand.looseAgainst(this);
 	}
 
 	@Override
